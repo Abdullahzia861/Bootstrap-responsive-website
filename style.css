@@ -1,0 +1,307 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+  body {
+
+    overflow: auto;
+  }
+
+
+  .homewall {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('./img/fruits/bg1.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    color: white;
+  }
+
+  .ebtn {
+    padding: 10px 50px;
+    font-size: 18px;
+    margin-left: 5rem;
+    background-color:orange;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 1.2rem;
+    transition: background-color 0.3s ease;
+    transition: border 0.5s;
+  }
+  @media screen and (max-width: 600px) {
+    .homewall {
+      justify-content: center;
+      text-align: center;
+      padding: 0 10px; 
+    }
+  
+    .ebtn {
+      margin-left: 0;
+    }
+  }
+  .ebtn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .ebtn:hover {
+    border: 1px solid white;
+  }
+
+  .navbar {
+    background-color: #343a40;
+    position: sticky;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.212);
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Set a higher z-index to make sure it's on top of other elements */
+  }
+
+  .nav-item a {
+    color: orange;
+    font-size: 1rem;
+    margin-left: 2rem;
+    font-weight: 600;
+    transition: color 0.5;
+  }
+
+  .nav-link:focus,
+  .nav-link:hover {
+    color: white;
+  }
+
+  .navbar-toggler {
+    background-color: orange;
+  }
+
+  .btn {
+    border: 1px solid orange;
+    width: 1fr;
+    transition: background-color 1s color 0.1s;
+    color: white;
+  }
+
+  .btn:hover {
+    background-color: orange;
+    color: white;
+  }
+
+  .logo {
+    color: orange;
+    font-weight: bold;
+  }
+
+  .logoimg {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* footer */
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .icons {
+    color: white;
+  }
+
+  .footer{
+    border: 1px solid rgba(128, 128, 128, 0.295);
+  }
+  .contactdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactdiv h5 {
+    color: orange;
+  }
+
+  /* aboutus */
+  .aboutus {
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .spanlogo {
+    color: #ffa500;
+    font-weight: bold;
+  }
+
+  .paracss {
+    font-weight: 600;
+    font-size: large;
+  }
+
+  .service {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .sicon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .servicetext {
+    margin-left: 1rem;
+  }
+
+
+  /* contactus */
+
+
+  .contactcontent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    border: 1px solid orange;
+    border-radius: 0.5rem;
+    padding: 0rem 1rem 1rem 1rem;
+    
+  }
+  .contactdet{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  font-size: 1.1rem;
+  }
+  .contactinfo h2 {
+    margin: 0; 
+}
+
+  .contactdet input{
+    width: 2fr;
+    height: 30px;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    color: white;
+    border-radius: 0.5rem;
+    background-color:rgba(105, 104, 104, 0.616); 
+  font-size: 1.1rem;
+  }
+  .contactdet textarea{
+    margin-top: 1.2rem;
+    width: 2fr;
+    margin-bottom: 1.2rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    color: white;
+    background-color:rgba(105, 104, 104, 0.616); 
+    font-size: 1.1rem;
+  }
+
+  .contactinfo{
+    margin-top: 1rem;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contactmaininfo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    border: 1px solid orange;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  .contactsecinfo{
+    margin-top: 2rem;
+  }
+
+/* .contact */
+
+
+  
+
+/* fruits */
+
+.product {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #343a40; 
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+}
+
+.txt {
+  color: white;
+}
+
+.cartbtndiv {
+  margin-top: auto; 
+}
+.cartbtn{
+  width: 100%;
+  background-color: orange;
+  border: none;
+  border-radius: 2rem;
+  text-align: center;
+  height: 3rem;
+}
+
+  
+.bill {
+  padding: 20px;
+}
+
+.billadd {
+  margin-bottom: 20px;
+}
+
+.billhead h3 {
+  margin-bottom: 10px;
+}
+
+.billdet input,
+.billdet textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
